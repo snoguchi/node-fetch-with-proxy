@@ -1,0 +1,25 @@
+{
+  "name": "node-fetch-with-proxy",
+  "version": "1.0.0",
+  "description": "node-fetch with proxy-agent",
+  "main": "lib/fetch-with-proxy.js",
+  "browser": "./lib/browser.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snoguchi/node-fetch-with-proxy.git"
+  },
+  "keywords": [],
+  "author": "Shinsuke Noguchi <shinsuke.noguchi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snoguchi/node-fetch-with-proxy/issues"
+  },
+  "homepage": "https://github.com/snoguchi/node-fetch-with-proxy#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "proxy-agent": "^3.1.1"
+  }
+}
