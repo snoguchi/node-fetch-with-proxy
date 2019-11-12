@@ -1,11 +1,11 @@
 {
   "name": "node-fetch-with-proxy",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "node-fetch with proxy-agent",
   "main": "lib/fetch-with-proxy.js",
   "browser": "./lib/browser.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,9 @@
   "dependencies": {
     "node-fetch": "^2.6.0",
     "proxy-agent": "^3.1.1"
+  },
+  "devDependencies": {
+    "http-proxy": "^1.18.0",
+    "jest": "^24.9.0"
   }
 }
