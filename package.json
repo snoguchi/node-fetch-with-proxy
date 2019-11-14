@@ -5,7 +5,8 @@
   "main": "lib/fetch-with-proxy.js",
   "browser": "./lib/browser.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write \"{lib,test}/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
   },
   "devDependencies": {
     "http-proxy": "^1.18.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
   }
 }
