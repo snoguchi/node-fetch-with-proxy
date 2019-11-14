@@ -2,7 +2,7 @@
 
 Thin wrapper of [node-fetch](https://www.npmjs.com/package/node-fetch) that can be used behind the proxy.
 
-In the Node.js environment, the proxy specified by the environment variable (HTTP_PROXY, https_proxy, etc.) is used.
+The proxy specified by the environment variable (HTTP_PROXY, https_proxy, etc.) is used in Node.js environment.
 
 ## Install
 
@@ -16,7 +16,7 @@ See [node-fetch](https://www.npmjs.com/package/node-fetch)
 
 ## Advanced Usage
 
-You can specify proxy options in the 3rd argument of `fetch`.
+You can explicitly specify proxy options with the 3rd argument of `fetch` API.
 
 ```javascript
 const proxyUrl = 'http://your.proxy:port';
