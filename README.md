@@ -2,27 +2,29 @@
 
 Thin wrapper of [node-fetch](https://www.npmjs.com/package/node-fetch) that can be used behind the proxy.
 
-The proxy specified by the environment variable (HTTP_PROXY, https_proxy, etc.) is used in Node.js environment.
-
 ## Install
 
 ```sh
-$ npm install node-fetch-with-proxy
+npm install node-fetch-with-proxy
 ```
 
 ## Usage
 
-See [node-fetch](https://www.npmjs.com/package/node-fetch)
-
-## Advanced Usage
-
-You can explicitly specify proxy options with the 3rd argument of `fetch` API.
+API is the same as `node-fetch`.
 
 ```javascript
-const proxyUrl = 'http://your.proxy:port';
+const fetch = require('node-fetch-with-proxy');
 
-fetch('https://httpbin.org/post', {
-  method: 'POST',
-  body: 'foo=bar'
-}, proxyUrl);
+fetch('http://httpbin.org/get')
+  .then(res => res.json())
+  .then(json => console.log(json));
 ```
+
+Unlike node-fetch, proxy can be set by environment variable.
+
+```sh
+export HTTP_PROXY=http://your.proxy:8888
+```
+
+Environment variables are only valid for Node.js.
+Note that the browser uses its own proxy settings instead.
