@@ -1,6 +1,6 @@
 {
   "name": "node-fetch-with-proxy",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "node-fetch with proxy-agent",
   "main": "lib/fetch-with-proxy.js",
   "browser": "./lib/browser.js",
