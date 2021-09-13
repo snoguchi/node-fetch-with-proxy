@@ -1,6 +1,6 @@
 {
   "name": "node-fetch-with-proxy",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "node-fetch with proxy-agent",
   "main": "lib/fetch-with-proxy.js",
   "browser": "./lib/browser.js",
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/snoguchi/node-fetch-with-proxy#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "proxy-agent": "^4.0.1"
+    "node-fetch": "^2.6.2",
+    "proxy-agent": "^5.0.0"
   },
   "devDependencies": {
     "http-proxy": "^1.18.1",
